@@ -11,7 +11,36 @@ namespace T39_03_06_SQLDirectoryUI_Homework
 		static void Main(string[] args)
 		{
 			SqlCrud sql = new(GetConnectionString());
-			sql.CreatePerson();
+			//sql.CreateAddress();
+			//sql.CreateEmployer();
+			//sql.CreatePerson();
+
+			PrintAllTables(sql);
+		}
+
+		private static void PrintAllTables(SqlCrud sql)
+		{
+			var addressesRows = sql.ReadAddressesList();
+			foreach (var row in addressesRows)
+			{
+				Console.WriteLine($"{row.Id:D2}: {row.StreetAddress} {row.City} {row.Country}");
+			}
+
+			Console.WriteLine();
+
+			var employersRows = sql.ReadEmployersList();
+			foreach (var row in employersRows)
+			{
+				Console.WriteLine($"{row.Id:D2}: {row.Employer}");
+			}
+
+			Console.WriteLine();
+
+			var peopleRows = sql.ReadPeopleList();
+			foreach (var row in peopleRows)
+			{
+				Console.WriteLine($"{row.Id:D2}: {row.FirstName} {row.LastName}");
+			}
 		}
 
 		private static string GetConnectionString(string connectionStringName = "Default")
