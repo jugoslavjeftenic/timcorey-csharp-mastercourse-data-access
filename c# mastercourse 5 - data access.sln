@@ -11,6 +11,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "T39_03_02_SQLContactsDB", "
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "T39_03_04_SQLDirectoryDB_Homework", "T39_03_04_SQLDirectoryDB_Homework\T39_03_04_SQLDirectoryDB_Homework.sqlproj", "{0B88DFC2-5BC9-45F4-B32C-FF9CAE0CAE58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T39_03_05_SQLDirectoryDALibrary_Homework", "T39_03_05_SQLDirectoryDALibrary_Homework\T39_03_05_SQLDirectoryDALibrary_Homework.csproj", "{08261298-48C6-4CEA-8279-EC76B2CF0474}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{0B88DFC2-5BC9-45F4-B32C-FF9CAE0CAE58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B88DFC2-5BC9-45F4-B32C-FF9CAE0CAE58}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B88DFC2-5BC9-45F4-B32C-FF9CAE0CAE58}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{08261298-48C6-4CEA-8279-EC76B2CF0474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08261298-48C6-4CEA-8279-EC76B2CF0474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08261298-48C6-4CEA-8279-EC76B2CF0474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08261298-48C6-4CEA-8279-EC76B2CF0474}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
