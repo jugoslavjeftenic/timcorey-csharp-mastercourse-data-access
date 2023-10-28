@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T39_03_03_SQLServerUI", "T39_03_03_SQLServerUI\T39_03_03_SQLServerUI.csproj", "{925DE377-5938-42EA-A7A8-08BD72EA65DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T39_03_03_SQLServerUI", "T39_03_03_SQLServerUI\T39_03_03_SQLServerUI.csproj", "{925DE377-5938-42EA-A7A8-08BD72EA65DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T39_03_01_DataAccessLibrary", "T39_03_01_DataAccessLibrary\T39_03_01_DataAccessLibrary.csproj", "{83C10005-8176-4224-9A02-F960787382CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T39_03_01_DataAccessLibrary", "T39_03_01_DataAccessLibrary\T39_03_01_DataAccessLibrary.csproj", "{83C10005-8176-4224-9A02-F960787382CD}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "T39_03_02_SQLContactsDB", "T39_03_02_SQLContactsDB\T39_03_02_SQLContactsDB.sqlproj", "{C6E7C461-B247-4222-9E31-EB658167C313}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "T39_03_04_SQLDirectoryDB_Homework", "T39_03_04_SQLDirectoryDB_Homework\T39_03_04_SQLDirectoryDB_Homework.sqlproj", "{0B88DFC2-5BC9-45F4-B32C-FF9CAE0CAE58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,12 @@ Global
 		{C6E7C461-B247-4222-9E31-EB658167C313}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6E7C461-B247-4222-9E31-EB658167C313}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C6E7C461-B247-4222-9E31-EB658167C313}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0B88DFC2-5BC9-45F4-B32C-FF9CAE0CAE58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B88DFC2-5BC9-45F4-B32C-FF9CAE0CAE58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B88DFC2-5BC9-45F4-B32C-FF9CAE0CAE58}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0B88DFC2-5BC9-45F4-B32C-FF9CAE0CAE58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B88DFC2-5BC9-45F4-B32C-FF9CAE0CAE58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B88DFC2-5BC9-45F4-B32C-FF9CAE0CAE58}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
