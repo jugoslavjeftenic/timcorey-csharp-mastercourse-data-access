@@ -13,6 +13,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "T39_03_04_SQLDirectoryDB_Ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T39_03_05_SQLDirectoryDALibrary_Homework", "T39_03_05_SQLDirectoryDALibrary_Homework\T39_03_05_SQLDirectoryDALibrary_Homework.csproj", "{08261298-48C6-4CEA-8279-EC76B2CF0474}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T39_03_06_SQLDirectoryUI_Homework", "T39_03_06_SQLDirectoryUI_Homework\T39_03_06_SQLDirectoryUI_Homework.csproj", "{CE8A8CB4-870F-4542-8C14-6FFFB2124C9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{08261298-48C6-4CEA-8279-EC76B2CF0474}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08261298-48C6-4CEA-8279-EC76B2CF0474}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08261298-48C6-4CEA-8279-EC76B2CF0474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE8A8CB4-870F-4542-8C14-6FFFB2124C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8A8CB4-870F-4542-8C14-6FFFB2124C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8A8CB4-870F-4542-8C14-6FFFB2124C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8A8CB4-870F-4542-8C14-6FFFB2124C9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
