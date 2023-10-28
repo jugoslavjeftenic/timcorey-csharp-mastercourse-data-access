@@ -63,8 +63,6 @@
     <Build Include="dbo\Tables\People.sql" />
     <Build Include="dbo\Tables\Addresses.sql" />
     <Build Include="dbo\Tables\Employers.sql" />
-    <Build Include="dbo\Tables\PeopleAddresses.sql" />
-    <Build Include="dbo\Tables\PeopleEmployers.sql" />
-    <Build Include="dbo\Tables\EmployersAddresses.sql" />
+    <Build Include="dbo\Tables\AddressesEmployersPeople.sql" />
   </ItemGroup>
 </Project>
