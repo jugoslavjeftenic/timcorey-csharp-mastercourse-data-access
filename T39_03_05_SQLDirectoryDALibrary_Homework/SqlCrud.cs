@@ -87,19 +87,36 @@ namespace T39_03_05_SQLDirectoryDALibrary_Homework
 		}
 
 		// Create AddressEmployerPersonRelation
-		public void CreateAddressEmployerPersonRelation(AddressEmployerPersonModel? AMPRelation = null)
+		public void CreateDirectoryEntry(AddressEmployerPersonModel? directoryEntry = null)
 		{
-			if (AMPRelation == null)
+			if (directoryEntry == null)
 			{
-				AMPRelation = new AddressEmployerPersonModel();
-				// TODO: random address ID
-				// TODO: random employer ID
-				// TODO: random person ID
+				string fetchIdSql;
+				Random random = new();
+				directoryEntry = new AddressEmployerPersonModel();
+
+				// Random Address Id
+				fetchIdSql = "select Id from dbo.Addresses";
+				var fetchAddressesId = db
+					.LoadData<AddressesIdsDTO, dynamic>(fetchIdSql, new { }, _connectionString);
+				directoryEntry.AddressId = fetchAddressesId[random.Next(0, fetchAddressesId.Count)].Id;
+
+				// Random Employer Id
+				fetchIdSql = "select Id from dbo.Employers";
+				var fetchEmployersId = db
+					.LoadData<EmployersIdsDTO, dynamic>(fetchIdSql, new { }, _connectionString);
+				directoryEntry.EmployerId = fetchEmployersId[random.Next(0, fetchEmployersId.Count)].Id;
+
+				// Random Person Id
+				fetchIdSql = "select Id from dbo.People";
+				var fetchPeopleId = db
+					.LoadData<PeopleIdsDTO, dynamic>(fetchIdSql, new { }, _connectionString);
+				directoryEntry.PersonId = fetchPeopleId[random.Next(0, fetchPeopleId.Count)].Id;
 			}
 
 			string sql = "insert into dbo.AddressesEmployersPeople (AddressId, EmployerId, PersonId) " +
 				"values (@AddressId, @EmployerId, @PersonId);";
-			db.SaveData(sql, new { AMPRelation.AddressId, AMPRelation.EmployerId, AMPRelation.PersonId },
+			db.SaveData(sql, new { directoryEntry.AddressId, directoryEntry.EmployerId, directoryEntry.PersonId },
 				_connectionString);
 		}
 	}
