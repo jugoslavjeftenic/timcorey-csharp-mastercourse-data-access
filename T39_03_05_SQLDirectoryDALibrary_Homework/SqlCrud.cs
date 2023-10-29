@@ -17,7 +17,6 @@ namespace T39_03_05_SQLDirectoryDALibrary_Homework
 		public void CreateAddressEntity(AddressModel? address = null)
 		{
 			address ??= new AddressModel();
-
 			string sql = "insert into dbo.Addresses (StreetAddress, City, Country) " +
 				"values (@StreetAddress, @City, @Country);";
 			db.SaveData(sql, new { address.StreetAddress, address.City, address.Country }, _connectionString);
@@ -28,14 +27,37 @@ namespace T39_03_05_SQLDirectoryDALibrary_Homework
 		{
 			string sql = "select Id, StreetAddress, City, Country from dbo.Addresses";
 			return db.LoadData<AddressDTO, dynamic>(sql, new { }, _connectionString);
+		}
 
+		// Read Address by Id
+		public AddressDTO ReadAddressById(int id)
+		{
+			string sql = "select Id, StreetAddress, City, Country from dbo.Addresses where Id = @Id";
+			var output = db
+				.LoadData<AddressDTO, dynamic>(sql, new { Id = id }, _connectionString)
+				.FirstOrDefault();
+			return output ?? throw new Exception($"Record with Id {id} is not found.");
+		}
+
+		// Update Address
+		public void UpdateAddress(AddressDTO address)
+		{
+			string sql = "update dbo.Addresses set " +
+				"StreetAddress = @StreetAddress, City = @City, Country = @Country where Id = @Id;";
+			db.SaveData(sql, address, _connectionString);
+		}
+
+		// Delete Address
+		public void DeleteAddress(int id)
+		{
+			string sql = "delete from dbo.Addresses where Id = @Id;";
+			db.SaveData(sql, new { Id = id }, _connectionString);
 		}
 
 		// Create Employer
 		public void CreateEmployerEntity(EmployerModel? employer = null)
 		{
 			employer ??= new EmployerModel();
-
 			string sql = "insert into dbo.Employers (Employer) " +
 				"values (@Employer);";
 			db.SaveData(sql, new { employer.Employer }, _connectionString);
@@ -46,14 +68,12 @@ namespace T39_03_05_SQLDirectoryDALibrary_Homework
 		{
 			string sql = "select Id, Employer from dbo.Employers";
 			return db.LoadData<EmployerDTO, dynamic>(sql, new { }, _connectionString);
-
 		}
 
 		// Create Person
 		public void CreatePersonEntity(PersonModel? person = null)
 		{
 			person ??= new PersonModel();
-
 			string sql = "insert into dbo.People (FirstName, LastName) " +
 				"values (@FirstName, @LastName);";
 			db.SaveData(sql, new { person.FirstName, person.LastName }, _connectionString);
@@ -64,7 +84,6 @@ namespace T39_03_05_SQLDirectoryDALibrary_Homework
 		{
 			string sql = "select Id, FirstName, LastName from dbo.People";
 			return db.LoadData<PersonDTO, dynamic>(sql, new { }, _connectionString);
-
 		}
 
 		// Create AddressEmployerPersonRelation
