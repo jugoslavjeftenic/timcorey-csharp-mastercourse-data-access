@@ -11,11 +11,19 @@ namespace T39_03_06_SQLDirectoryUI_Homework
 		static void Main(string[] args)
 		{
 			SqlCrud sql = new(GetConnectionString());
-			//sql.CreateAddress();
-			//sql.CreateEmployer();
-			//sql.CreatePerson();
+			//sql.CreateAddressEntity();
 
-			PrintAllTables(sql);
+			//PrintAllTables(sql);
+			//Console.WriteLine(sql.ReadAddressById(1).StreetAddress);
+			//UpdateAddress(sql);
+			//sql.DeleteAddress(12);
+		}
+
+		private static void UpdateAddress(SqlCrud sql)
+		{
+			var address= sql.ReadAddressById(1);
+			address.City = "Subotica";
+			sql.UpdateAddress(address);
 		}
 
 		private static void PrintAllTables(SqlCrud sql)
