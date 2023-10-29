@@ -17,6 +17,7 @@ namespace T39_03_06_SQLDirectoryUI_Homework
 			//Console.WriteLine(sql.ReadAddressById(1).StreetAddress);
 			//UpdateAddress(sql);
 			//sql.DeleteAddress(12);
+			sql.CreateDirectoryEntry();
 		}
 
 		private static void UpdateAddress(SqlCrud sql)
