@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using T39_03_05_SQLDirectoryDALibrary_Homework;
 
-namespace T39_05_02_MySqlDirectoryUI
+namespace T39_05_02_MySqlDirectoryUI_Homework
 {
 	// Build a simple database in MySQL that holds People, Addresses, and Employers.
 	// Make sure it builds and that you can load and save data in C#.
@@ -18,7 +18,7 @@ namespace T39_05_02_MySqlDirectoryUI
 			//Console.WriteLine(sql.ReadAddressById(1).StreetAddress);
 			//UpdateAddress(sql);
 			//sql.DeleteAddress(12);
-			sql.CreateDirectoryEntry();
+			//sql.CreateDirectoryEntry();
 			PrintAllTables(sql);
 		}
 
