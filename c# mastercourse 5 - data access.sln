@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T39_04_02_SQLiteUI", "T39_0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T39_04_04_SQLiteDirectoryUI_Homework", "T39_04_04_SQLiteDirectoryUI_Homework\T39_04_04_SQLiteDirectoryUI_Homework.csproj", "{30F94165-30EC-428F-8AD6-86DA90DA620D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T39_05_01_MySqlUI", "T39_05_01_MySqlUI\T39_05_01_MySqlUI.csproj", "{6828C570-7933-47B9-B243-E502DF1D1BAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T39_05_01_MySqlUI", "T39_05_01_MySqlUI\T39_05_01_MySqlUI.csproj", "{6828C570-7933-47B9-B243-E502DF1D1BAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T39_05_02_MySqlDirectoryUI", "T39_05_02_MySqlDirectoryUI\T39_05_02_MySqlDirectoryUI.csproj", "{4941DA87-D3D1-426F-8905-0235F3427EED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{6828C570-7933-47B9-B243-E502DF1D1BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6828C570-7933-47B9-B243-E502DF1D1BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6828C570-7933-47B9-B243-E502DF1D1BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4941DA87-D3D1-426F-8905-0235F3427EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4941DA87-D3D1-426F-8905-0235F3427EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4941DA87-D3D1-426F-8905-0235F3427EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4941DA87-D3D1-426F-8905-0235F3427EED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
