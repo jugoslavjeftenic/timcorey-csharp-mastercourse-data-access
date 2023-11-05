@@ -23,9 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T39_05_01_MySqlUI", "T39_05
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T39_05_02_MySqlDirectoryUI_Homework", "T39_05_02_MySqlDirectoryUI_Homework\T39_05_02_MySqlDirectoryUI_Homework.csproj", "{7B7D17E4-A636-48BB-8117-78F245D8DE40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T40_02_01_DataAccessLibrary", "T40_02_01_DataAccessLibrary\T40_02_01_DataAccessLibrary.csproj", "{CFE50525-1E92-4DEA-B332-2C32397D1385}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T40_02_01_DataAccessLibrary", "T40_02_01_DataAccessLibrary\T40_02_01_DataAccessLibrary.csproj", "{CFE50525-1E92-4DEA-B332-2C32397D1385}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T40_02_02_MongoDbUI", "T40_02_02_MongoDbUI\T40_02_02_MongoDbUI.csproj", "{58BE40AF-8C3B-41AB-8D8E-A4BCA9FB2762}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T40_02_02_MongoDbUI", "T40_02_02_MongoDbUI\T40_02_02_MongoDbUI.csproj", "{58BE40AF-8C3B-41AB-8D8E-A4BCA9FB2762}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T40_02_03_NoSQLDirectoryDALibrary_Homework", "T40_02_03_NoSQLDirectoryDALibrary_Homework\T40_02_03_NoSQLDirectoryDALibrary_Homework.csproj", "{7401B37B-63FA-49E6-98BF-AD155BC4C65B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T40_02_04_MongoDbDirectoryUI_Homework", "T40_02_04_MongoDbDirectoryUI_Homework\T40_02_04_MongoDbDirectoryUI_Homework.csproj", "{8CE75CC3-0262-44BF-8C25-9364F6E78474}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +89,14 @@ Global
 		{58BE40AF-8C3B-41AB-8D8E-A4BCA9FB2762}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58BE40AF-8C3B-41AB-8D8E-A4BCA9FB2762}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58BE40AF-8C3B-41AB-8D8E-A4BCA9FB2762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7401B37B-63FA-49E6-98BF-AD155BC4C65B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7401B37B-63FA-49E6-98BF-AD155BC4C65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7401B37B-63FA-49E6-98BF-AD155BC4C65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7401B37B-63FA-49E6-98BF-AD155BC4C65B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CE75CC3-0262-44BF-8C25-9364F6E78474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE75CC3-0262-44BF-8C25-9364F6E78474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE75CC3-0262-44BF-8C25-9364F6E78474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE75CC3-0262-44BF-8C25-9364F6E78474}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
