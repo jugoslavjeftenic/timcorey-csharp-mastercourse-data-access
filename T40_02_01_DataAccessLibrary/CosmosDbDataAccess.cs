@@ -1,6 +1,4 @@
 ﻿using Microsoft.Azure.Cosmos;
-using MongoDB.Bson;
-using MongoDB.Driver;
 
 namespace T40_02_01_DataAccessLibrary
 {
