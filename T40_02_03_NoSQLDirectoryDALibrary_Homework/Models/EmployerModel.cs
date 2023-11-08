@@ -1,4 +1,7 @@
-﻿namespace T40_02_03_NoSQLDirectoryDALibrary_Homework.Models
+﻿using MongoDB.Bson.Serialization.Attributes;
+using Newtonsoft.Json;
+
+namespace T40_02_03_NoSQLDirectoryDALibrary_Homework.Models
 {
 	public class EmployerModel
 	{
@@ -11,6 +14,8 @@
 			"Global Solutions Group"
 		};
 
+		[BsonId]
+		[JsonProperty(PropertyName = "id")]
 		public Guid Id { get; set; } = Guid.NewGuid();
 		public string Employer { get; set; }
 		public AddressModel Address { get; set; }
